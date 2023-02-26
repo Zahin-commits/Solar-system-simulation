@@ -1,0 +1,309 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: #222;
+    overflow: hidden;
+    background: url(background.jpg) no-repeat center center/cover;
+} 
+main h1 {
+    position: relative;
+    top: 0px;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    
+}
+main h1::after {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 615px;
+    background-color: white;
+    border-radius: 3px;
+}
+.container{
+   margin: 0px;
+   margin-top: 10px; 
+   margin-bottom: 10px; 
+}
+ /* .solar-system{ 
+    height: 440px;
+   width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+*/
+body div .orbit{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content:center ;
+   border: 1px solid rgba(238, 238, 238, 0.425);
+   border-radius: 50%;
+ 
+ 
+}
+main #manual{
+    font-size: 20px;
+}
+
+#infoBox{
+    position: absolute;
+    top: 20px;
+  /*  height: 90vh;
+    width: 90vw; */
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ h3{
+    text-align: center;
+    margin-top: 5px;
+}
+.infoboxitem{
+    display: flex;
+    display: none;
+    position: fixed;
+    top: 30%;
+    max-width:720px;
+    background-color: rgba(0, 0, 0, 0.685);
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.infoboxitem p {
+    margin: 10px;
+}
+.infoboxitem img {
+    border-radius: 10px; 
+    width: 250px;
+    object-fit: cover;
+}
+
+#xmark{
+  position: absolute;
+  right: 15px;
+}
+
+/* orbit */
+.p1o{
+    height: 400px;
+    width: 400px;
+    animation: orbit 300s linear infinite;
+    transform: rotate(-30deg);
+}
+
+.p2o{
+    height: 340px;
+    width: 340px;
+    animation: orbit 600s linear infinite;
+    transform: rotate(-50deg);
+}
+.p3o{
+    height: 290px;
+    width: 290px;   
+    animation: orbit 600s linear infinite;
+    transform: rotate(200deg);
+}
+
+.p4o{
+    height: 240px;
+    width: 240px;
+    animation: orbit 580s linear infinite;
+    transform: rotate(-240deg);
+}
+.p5o{
+    height: 190px;
+    width: 190px;
+    animation: orbit 400s linear infinite;
+    transform: rotate(270deg);
+}
+.p6o{
+    height: 150px;
+    width: 150px;
+    animation: orbit 200s linear infinite;
+    transform: rotate(250deg);
+}
+.p7o{
+    height:110px ;
+    width: 110px;
+    animation: orbit 200s linear infinite;
+    transform: rotate(60deg);
+}
+.p8o{
+    height: 78px;
+    width: 78px;
+    animation: orbit 10s linear infinite;
+}
+
+/* planets */
+.p1{
+    height: 22px;
+    width: 22px;
+    top: -12px;
+    background-color: #3E66F9;
+    box-shadow: 0px 0px 23px 0px #3E66F9;
+    background: url(neptune2.png) no-repeat center center/cover;
+}
+
+.p2{
+    height: 19px;
+    width: 19px;
+    top: -11px;
+    background-color: #AFDBF5;
+    box-shadow: 0px 0px 23px 0px #AFDBF5;
+    background: url(uranus.jpg) no-repeat center center/cover;
+}
+.p2::before{
+    content: '';
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           width: 135%;
+           height: 8px;
+           border: 1px solid rgb(255, 255, 255);
+           border-top: 0;
+           border-radius: 50%;
+           transform: translate(-50% , -50%) rotate(30deg);
+}
+.p3{
+    height: 23px;
+    width: 23px;
+    top: -12px;
+    background: #C88B3A;
+    box-shadow: 0px 0px 23px 0px #C88B3A;
+    background: url(saturn.png) no-repeat center center/cover;
+}
+.p3::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 135%;
+    height: 8px;
+    border: 2px solid #ffce8e;
+    border-top: 0;
+    border-radius: 50%;
+    transform: translate(-50% , -50%) ;
+}
+.p4{
+    height: 26px;
+    width: 26px;
+    top: -13px;
+    background-color: 	#ddbca6;
+    box-shadow: 0px 0px 23px 0px #ddbca6;
+    background: url(jupiter.png) no-repeat center center/cover;
+}
+.p5{
+    height: 12px;
+    width: 12px;
+    top: -7px;
+    background-color: #C1440E;
+    box-shadow: 0px 0px 23px 0px #C1440E;
+    background: url(mars.png) no-repeat center center/cover;
+}
+.p6{
+    height: 17px;
+    width: 17px;
+    top: -9px;
+    background-color: #7ae4fc;
+    box-shadow: 0px 0px 23px 0px #7ae4fc;
+   animation: orbit 1s linear infinite;
+}
+.p6::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -45%;
+    width: 6px;
+    height: 6px;
+  background-color: rgb(197, 197, 197);
+    border-radius: 50%;
+}
+.p6::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    transform: translate(-50% , -50%) ;
+    background: url(earth.png) no-repeat center center/cover;
+    animation: Altorbit 1s linear infinite;
+}
+
+.p7{
+    height: 13.5px;
+    width: 13.5px;
+    top: -7px;
+    background-color: #eecb8b;
+    box-shadow: 0px 0px 23px 0px #eecb8b;
+    background: url(venus.png) no-repeat center center/cover;
+}
+.p8{
+    height: 10px;
+    width: 10px;
+    top: -5px;
+    background-color: #b4855b;
+    box-shadow: 0px 0px 23px 0px #b4855b;
+    background: url(mercury.png) no-repeat center center/cover;
+}
+
+
+.sun{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(255, 232, 103);
+    box-shadow: 0px 0px 23px 0px rgb(255, 232, 103);
+}
+.planets{
+    position: absolute;
+   
+    border-radius: 50%;
+}
+@keyframes orbit {
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes Altorbit {
+    100%{
+        transform: translate(-50% , -50%) rotate(360deg);
+    }
+}
+
+main{
+ display: flex;
+ flex-direction: column;
+ margin: auto;
+ align-items: center;
+}
+
+#btn{
+    margin: 8px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
